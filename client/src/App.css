@@ -1,0 +1,559 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  max-height: 400px;
+  margin-left: -75px;
+  padding-right: 4.4px;
+  position: absolute;
+  left: 50%;
+  transition: transform .2s;
+  margin-top: 220px;
+  border-radius: 50%;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: rgb(34, 34, 36);
+  background-color: rgb(34, 34, 36);
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.navbar-elements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-img-1,
+.home-img-2,
+.home-img-3,
+.home-img-4 {
+  width: 433.38461538461536px;
+  height: 294px;
+  object-fit: cover;
+  margin-left: 5px;
+}
+
+.home-imgs {
+  display: flex;
+  /* position: relative; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-containers {
+  display: flex;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger1 {
+  max-height: 400px;
+  margin-left: -75px;
+  padding-right: 4.4px;
+  position: absolute;
+  left: 55.5%;
+  transition: transform .2s;
+  border-radius: 50%;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: rgb(34, 34, 36);
+  background-color: rgb(34, 34, 36);
+}
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  width: 35px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked+.hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked+.hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked+.hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked~.menu1 {
+  height: 200px;
+}
+
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: rgb(41, 42, 43);
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  /* grid-row-gap: 25px; */
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.menu1 a:first-child {
+  margin-top: 5px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 30px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 6px 0;
+  font: 700 20px 'Oswald', sans-serif;
+}
+
+.link1:hover {
+  background-color: #aaaaaa;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.insta-link {
+  max-width: 100px;
+  margin-top: 3px;
+}
+
+.hamburger2 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
+
+.hamburger2 div {
+  background-color: rgb(101, 100, 100);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle2 {
+  display: none;
+}
+
+#toggle2:checked+.hamburger2 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle2:checked+.hamburger2 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle2:checked+.hamburger2 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle2:checked~.menu2 {
+  height: 340px;
+}
+
+
+/* Menu */
+.menu2 {
+  width: 100%;
+  background-color: #292b2d;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu2 a:first-child {
+  margin-top: 40px;
+}
+
+.menu2 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link2 {
+  width: 100%;
+  margin: 0;
+  padding: 0px 0;
+  font: 700 20px 'Oswald', sans-serif;
+}
+
+.link2:hover {
+  background-color: #fff;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.banner {
+  object-fit: cover;
+  width: 800px;
+  height: 250px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-container {
+  background-color: #1b1c1d;
+  width: 70%;
+}
+
+.about-container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.band-bio {
+  width: 89%;
+  position: relative;
+  left: 40px;
+  top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.torryn-pic,
+.lyus-pic,
+.em-pic,
+.ellie-pic,
+.terrie-pic {
+  object-fit: cover;
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.terrie,
+.torryn,
+.lyus,
+.em,
+.ellie {
+  margin-bottom: -180px;
+}
+
+/* .terrie-pic-wrap{
+  width: 100%;
+  max-width: 275px;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: ;
+} */
+
+
+
+.terrie-pic {
+  top: 40px;
+  left: 63%;
+}
+
+.terrie-title {
+  position: relative;
+  top: -200px;
+  left: 6.5%;
+}
+
+.terrie-bio {
+  width: 50%;
+  position: relative;
+  left: 6.5%;
+  top: -200px;
+}
+
+.torryn-pic {
+  left: 60px;
+}
+
+.torryn-title {
+  position: relative;
+  left: 750px;
+  top: -240px;
+  width: 40px;
+}
+
+.torryn-bio {
+  position: relative;
+  width: 400px;
+  left: 410px;
+  top: -240px;
+  text-align: right;
+}
+
+.lyus-pic {
+  left: 63%;
+}
+
+.lyus-title {
+  position: relative;
+  left: 60px;
+  top: -240px;
+}
+
+.lyus-bio {
+  width: 400px;
+  position: relative;
+  left: 60px;
+  top: -240px;
+}
+
+.em-pic {
+  left: 60px;
+}
+
+.em-title {
+  position: relative;
+  left: 777px;
+  top: -240px;
+  width: 40px;
+}
+
+.em-bio {
+  position: relative;
+  width: 400px;
+  left: 405px;
+  top: -240px;
+  text-align: right;
+}
+
+.ellie-pic {
+  left: 63%;
+}
+
+.ellie-title {
+  position: relative;
+  left: 60px;
+  top: -240px;
+}
+
+.ellie-bio {
+  width: 400px;
+  position: relative;
+  left: 60px;
+  top: -240px;
+}
+
+@media screen and (min-width: 440) and (max-width: 1140px) {
+  .about-container {
+    background-color: #1b1c1d;
+    width: 90%;
+  }
+
+  .banner {
+    height: 175px;
+  }
+
+  .band-bio {
+    left: 19px;
+  }
+
+  .terrie,
+  .torryn,
+  .lyus,
+  .em,
+  .ellie {
+    margin-bottom: 0px;
+  }
+
+  .terrie-pic,
+  .lyus-pic,
+  .ellie-pic {
+    top: 40px;
+    left: 15%;
+  }
+
+  .terrie-title,
+  .lyus-title,
+  .ellie-title {
+    top: 20px;
+    left: 50px;
+  }
+
+  .terrie-bio,
+  .lyus-bio {
+    width: 250px;
+    left:50px;
+    top: 20px;
+
+  }
+
+  .torryn-pic,
+  .em-pic {
+    left: 15%;
+    top: 40px;
+  }
+
+  .torryn-title {
+    left: 260px;
+    top: 20px;
+  }
+
+  .torryn-bio,
+  .em-bio {
+    width: 250px;
+    left: 70px;
+    top: 20px;
+  }
+
+  .em-title{
+    left: 290px;
+    top: 20px;
+  }
+
+  .ellie-bio{
+    width: 250px;
+    left:50px;
+    top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .about-container {
+    background-color: #1b1c1d;
+    width: 95%;
+  }
+
+.band-members{
+  position: relative;
+  justify-content: center;
+}
+
+  .banner {
+    height: 100px;
+  }
+
+  .band-bio {
+    left: 12px;
+    width: 80%;
+    margin: 10px;
+  }
+
+  .terrie,
+  .torryn,
+  .lyus,
+  .em,
+  .ellie {
+    margin-bottom: 0px;
+  }
+
+  .terrie-pic,
+  .lyus-pic,
+  .ellie-pic {
+    top: 40px;
+    left: 15%;
+  }
+
+  .terrie-title,
+  .lyus-title,
+  .ellie-title {
+    top: 20px;
+    left: 50px;
+  }
+
+  .terrie-bio,
+  .lyus-bio {
+    width: 250px;
+    left:50px;
+    top: 20px;
+
+  }
+
+  .torryn-pic,
+  .em-pic {
+    left: 15%;
+    top: 40px;
+  }
+
+  .torryn-title {
+    left: 260px;
+    top: 20px;
+  }
+
+  .torryn-bio,
+  .em-bio {
+    width: 250px;
+    left: 70px;
+    top: 20px;
+  }
+
+  .em-title{
+    left: 290px;
+    top: 20px;
+  }
+
+  .ellie-bio{
+    width: 250px;
+    left:50px;
+    top: 20px;
+    padding-bottom: 40px;
+  }
+}
