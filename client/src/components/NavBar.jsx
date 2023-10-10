@@ -1,30 +1,41 @@
-import { NavLink, useNavigate } from "react-router-dom"
-import { useState } from "react";
+import React, { useState } from "react";
+import SideMenu from "./SideMenu";
 
 function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
-    return (
-        <div>
-            <nav className="w-full bg-zinc-900 shadow">
-                <ul className="items-center p-5 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                    <li className="font-semibold text-gray-200 hover:text-blue-600">
-                        <NavLink to="/" className="link1">Home</NavLink>
-                    </li>
-                    <li className="font-semibold text-gray-200 hover:text-blue-600">
-                        <NavLink to="/about" className="link1">About</NavLink>
-                    </li>
-                    <li className="font-semibold text-gray-200 hover:text-blue-600">
-                        <NavLink to="/book-us" className="link1">Book Us</NavLink>
-                    </li>
-                    <a className="link1" href="https://linktr.ee/givemegoldband">
-                        <img className="insta-link h-6" src="/src/images/linktree2.png" />
-                    </a>
-                </ul>
-            </nav>
+  return (
+    <div>
+      <nav className="w-full">
+        <div className="flex items-center justify-between p-4">
+          <button
+            onClick={toggleMenu}
+            className="text-gray-200 hover:text-blue-600 p-3 ml-auto"
+          >
+            ☰
+          </button>
         </div>
-    )
+        {/* <div className="flex items-center">
+          <div className="w-[150px] mx-auto">
+            <img
+              src="./src/images/givemegold-logo.png"
+              alt="Logo"
+              className="max-h-[90px] mt-[-80px] pl-[30px]"
+            />
+          </div>
+        </div> */}
+      </nav>
+      {isMenuOpen && <SideMenu isOpen={isMenuOpen} closeMenu={closeMenu} />}
+    </div>
+  );
 }
 
-export default NavBar
+export default NavBar;
