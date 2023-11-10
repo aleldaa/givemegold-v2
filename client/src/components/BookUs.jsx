@@ -1,7 +1,11 @@
+import ContactForm from "./ContactForm"
+
 function BookUs(){
     return(
         <div>
-            <h1>Hello World</h1>
+            <div>
+                <ContactForm/>
+            </div>
         </div>
     )
 }
